@@ -1,0 +1,18 @@
+modules:
+  macro:
+    - key: hello-world-confluence-app-hello-world-macro
+      resource: main
+      render: native
+      resolver:
+        function: resolver
+      title: hello-world-confluence-app
+  function:
+    - key: resolver
+      handler: index.handler
+resources:
+  - key: main
+    path: src/frontend/index.jsx
+app:
+  runtime:
+    name: nodejs20.x
+  id: ari:cloud:ecosystem::app/d43899b2-e5b2-4466-b4a8-d91bd61d481e
