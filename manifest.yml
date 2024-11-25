@@ -5,7 +5,7 @@ modules:
       render: native
       resolver:
         function: resolver
-      title: hello-world-confluence-app
+      title: Forge app for Della.
   function:
     - key: resolver
       handler: index.handler
@@ -14,5 +14,5 @@ resources:
     path: src/frontend/index.jsx
 app:
   runtime:
-    name: nodejs20.x
+    name: nodejs18.x
   id: ari:cloud:ecosystem::app/d43899b2-e5b2-4466-b4a8-d91bd61d481e
